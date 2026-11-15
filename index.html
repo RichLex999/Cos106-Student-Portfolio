@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Richard Alexander Joe | Cybersecurity & Web Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="index.html" class="brand">
+        <span class="brand-badge">RAJ</span>
+        <span>Richard A. Joe</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-content fade-in">
+        <span class="pill-tag">MIVA Open University • School of Computing</span>
+        <h1>Welcome! I’m <span class="highlight">Richard Alexander Joe</span></h1>
+        <p class="subtitle">
+          B.Sc. Cyber Security Student (Class of 2028) &bull; Systems Infrastructure &amp; Defensive Security Specialist
+        </p>
+        <p class="bio-text">
+          Based in Lekki, Lagos State and raised in Port Harcourt, Rivers State, I bring over a decade of hands-on technical experience spanning electrical engineering, computer hardware diagnostics, IT infrastructure, and foundational cybersecurity. Today, I combine ground-up systems knowledge with modern web development and Security Operations Centre (SOC) principles to help build resilient, secure digital environments.
+        </p>
+        <div class="hero-actions">
+          <a href="projects.html" class="btn btn-primary">Explore My Projects</a>
+          <a href="planner.html" class="btn btn-outline">Open Academic Planner</a>
+        </div>
+      </div>
+
+      <aside class="hero-card fade-in">
+        <div class="profile-frame">
+          <img 
+            src="assets/profile.jpg" 
+            alt="Portrait of Richard Alexander Joe" 
+            onerror="this.src='data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22320%22 height=%22320%22 viewBox=%220 0 320 320%22><rect width=%22320%22 height=%22320%22 fill=%22%230F2537%22/><circle cx=%22160%22 cy=%22120%22 r=%2255%22 fill=%22%23C5A059%22/><path d=%22M65 280 C65 215, 255 215, 255 280%22 fill=%22%23C5A059%22/><text x=%22160%22 y=%22305%22 font-family=%22Arial%22 font-size=%2214%22 fill=%22%23ffffff%22 text-anchor=%22middle%22>Richard Alexander Joe</text></svg>'"
+          />
+        </div>
+        <div class="profile-meta">
+          <h3>Academic &amp; Career Snapshot</h3>
+          <ul>
+            <li><strong>Programme:</strong> B.Sc. Cyber Security</li>
+            <li><strong>Institution:</strong> MIVA Open University</li>
+            <li><strong>Location:</strong> Lekki, Lagos, Nigeria</li>
+            <li><strong>Focus:</strong> SOC Operations, Web Security &amp; IT Infrastructure</li>
+          </ul>
+        </div>
+      </aside>
+    </section>
+
+    <section class="highlights-section container">
+      <h2 class="section-title">Core Pillars of My Work</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Defensive Cybersecurity</h3>
+          <p>Applying SOC fundamentals, threat intelligence, vulnerability assessment, and network defence to protect digital assets.</p>
+        </article>
+        <article class="card">
+          <h3>Systems &amp; Hardware</h3>
+          <p>10+ years of ground-up diagnostics across electrical installations, enterprise IT support, Linux CLI, and server uptime.</p>
+        </article>
+        <article class="card">
+          <h3>Secure Web Engineering</h3>
+          <p>Developing responsive, accessible, and security-conscious web applications using HTML5, CSS3, JavaScript, and PHP.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Multimedia Requirement (HTML5 Audio) -->
+    <section class="media-section container">
+      <div class="media-box">
+        <div>
+          <h3>Audio Introduction &amp; Career Pitch</h3>
+          <p>Listen to a quick overview of my transition from hardware &amp; electrical infrastructure to cybersecurity engineering.</p>
+        </div>
+        <audio controls preload="none">
+          <source src="assets/intro-audio.mp3" type="audio/mpeg" />
+          Your browser does not support the HTML5 audio element.
+        </audio>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Richard Alexander Joe &bull; B.Sc. Cyber Security, MIVA Open University (COS 106 Term Project)</p>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

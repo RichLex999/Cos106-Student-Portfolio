@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academic Planner | Richard Alexander Joe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="index.html" class="brand">
+        <span class="brand-badge">RAJ</span>
+        <span>Richard A. Joe</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="planner.html" class="active">Academic Planner</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container page-content">
+    <section class="page-header">
+      <span class="pill-tag">Student Productivity System</span>
+      <h1>MIVA Academic &amp; Lab Planner</h1>
+      <p>
+        Manage coursework, COS 106 lab milestones, cybersecurity study modules, and exam deadlines. Tasks are saved automatically in your browser.
+      </p>
+    </section>
+
+    <section class="planner-wrapper">
+      <form id="taskForm" class="task-form" novalidate>
+        <div class="form-row">
+          <input 
+            type="text" 
+            id="taskInput" 
+            placeholder="e.g., Complete COS 106 Web Technologies GitHub Deployment..." 
+            aria-label="Task description"
+            required
+          />
+          <select id="courseSelect" aria-label="Course Code">
+            <option value="COS 106">COS 106 (Web Tech)</option>
+            <option value="CYB 102">CYB 102 (Cyber Security)</option>
+            <option value="MTH 101">MTH 101 (Mathematics)</option>
+            <option value="SOC Lab">SOC / CTF Lab</option>
+          </select>
+          <input type="date" id="dueDateInput" aria-label="Due Date" />
+          <button type="submit" class="btn btn-primary">Add Task</button>
+        </div>
+        <p id="plannerFeedback" class="feedback-msg" role="alert"></p>
+      </form>
+
+      <div class="planner-stats">
+        <span>Total Tasks: <strong id="totalCount">0</strong></span>
+        <span>Completed: <strong id="completedCount">0</strong></span>
+        <span>Pending: <strong id="pendingCount">0</strong></span>
+      </div>
+
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Richard Alexander Joe &bull; B.Sc. Cyber Security, MIVA Open University</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
